@@ -7,7 +7,12 @@ function scr_check_player_enemy_col(){
 
 		if player_level <= (enemy_id.level/2) {
 			// game over
-			room_restart()
+			global.lifes-=1
+			if global.lifes < 0
+			    // need to show a game over message 
+				game_restart()
+			else
+				room_restart()
 		}
 
 		//player takes hit
