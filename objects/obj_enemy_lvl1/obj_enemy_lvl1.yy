@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_enemy_lvl1",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_enemy_lvl1",
   "overriddenProperties":[
@@ -11,8 +9,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy_template","path":"objects/obj_enemy_template/obj_enemy_template.yy",},"propertyId":{"name":"spd","path":"objects/obj_enemy_template/obj_enemy_template.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":{
     "name":"obj_enemy_template",

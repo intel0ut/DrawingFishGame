@@ -1,4 +1,7 @@
 /// @description draw HP bar above enemy
+
+if (!enabled) exit
+
 var _player_inst = instance_find(obj_player,0)
 
 if  _player_inst {
