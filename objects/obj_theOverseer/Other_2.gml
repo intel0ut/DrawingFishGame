@@ -13,7 +13,7 @@ font_enable_effects(_bubble_font, true, {
     dropShadowAlpha: 0.5,
     outlineEnable: true,
     outlineDistance: 1,
-    outlineColour: c_aqua,
+    outlineColour: c_blue,
     glowEnable: true,
     glowEnd: 3,
     glowColour: c_blue,
@@ -21,3 +21,5 @@ font_enable_effects(_bubble_font, true, {
 })
 
 global.lifes=5
+global.player_level=1
+global.player_xp=0

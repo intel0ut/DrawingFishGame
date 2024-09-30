@@ -10,5 +10,4 @@ alarm[1]=3
 duration = 3.5;  // seconds
 expired = 0.0;
 alpha = 0.0;
-STARTED=false
 SPLASH=true

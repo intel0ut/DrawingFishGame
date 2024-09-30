@@ -37,7 +37,6 @@ if !SPLASH {
 	if ( expired > duration ) {
 		instance_activate_all()
 		instance_destroy(self,true)
-		STARTED=true
 	}
 	alpha = sin( expired/duration * 3.14159 );   // ramps up and down
 	y-=1; 

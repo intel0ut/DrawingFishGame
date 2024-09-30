@@ -1,10 +1,9 @@
 // @description check if player collided with enemy and process hit. 
 //              If player level > enemy level, player eats enemy
 function scr_check_player_enemy_col(){
-	var enemy_id=other.id
 	
 	if instance_exists(other) {
-
+		var enemy_id=other.id
 		if player_level <= (enemy_id.level/2) {
 			// game over
 			global.lifes-=1
@@ -16,13 +15,17 @@ function scr_check_player_enemy_col(){
 		}
 
 		//player takes hit
-		if player_level > (enemy_id.level/2) and player_level < enemy_id.level {
-			var _hit=player_hp-(enemy_id.food*2)
-			player_hp=max(_hit,0)
-			if player_hp==0 {
-				player_hp=max_hp-abs(_hit)
-				player_level-=1
-				player_size=8/player_level
+		if can_take_hit {
+			if player_level > (enemy_id.level/2) and player_level < enemy_id.level {
+				var _hit=player_hp-(enemy_id.food*2)
+				player_hp=max(_hit,0)
+				can_take_hit=false
+				alarm[0] = 20
+				if player_hp==0 {
+					player_hp=max_hp-abs(_hit)
+					player_level-=1
+					player_size=8/player_level
+				}
 			}
 		}
 

@@ -5,7 +5,7 @@ function scr_enemy_step(){
 	if !hit // seek player
 		move_towards_point(global._inst_player.x,global._inst_player.y,spd)
 		
-	else { // but if our level is lower, take hit and move away
+	else { // but if our level is lower, take hit and bounce back
 		move_towards_point(global._inst_player.x,global._inst_player.y,-(spd*4))
 		if (alarm[0] < 0) {
 			alarm[0] = 20

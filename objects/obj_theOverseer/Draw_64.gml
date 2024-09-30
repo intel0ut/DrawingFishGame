@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description draw sprites for remaining lifes
 // You can write your code in this editor
 
 for (i=0; i< global.lifes; i++) {
