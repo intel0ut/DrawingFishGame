@@ -1,0 +1,27 @@
+TODO List
+
+V add all enemy sprites and objects for them
+V organize enemies by their respective sea levels
+V add code to spawn level boss and move to next room
+- add manager object to show messages to user
+- finish painting the sprites
+- maybe add animation to the sprites (swim, bite)
+- add a XP bar in place of the player HP bar
+- add hp bar to top of player
+- XP bar will keep track of player level
+	- XP will only increment
+	- each level has a next_level_xp that increases as the player level is higher
+- food recovers HP and give small amount of XP
+- other fish gives XP only
+- level up recovers HP
+- rework food spawn to limit how much food spawn in each level. 
+	- total should be enough to fight boss and amount spawn decrease with the player level
+- once player reach a condition for each level, spawn a "mini Boss"
+	- "A big fish is coming!"
+	- mini boss is one of the fish from next level with more HP and bigger size
+	- level will be similar to player level
+	- player must hit the boss to inflict damage
+		- boss damage player too, maybe player need food to recover hp?
+	- Conditions:
+		- player reach a certain level
+- add music and sfx
