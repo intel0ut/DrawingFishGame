@@ -3,7 +3,8 @@ TODO List
 V add all enemy sprites and objects for them
 V organize enemies by their respective sea levels
 V add code to spawn level boss and move to next room
-- add manager object to show messages to user
+V add manager object to show messages to user
+- Fix scale of enemies and player when starting level/boss entering room
 - finish painting the sprites
 - maybe add animation to the sprites (swim, bite)
 - add a XP bar in place of the player HP bar

@@ -5,6 +5,7 @@ var _enemy_list = []
 var _enemy_max_spd = 2
 var _enemy_level
 global.boss_spawned=false
+global.room_finished=false
 
 global._inst_player=instance_find(obj_player,0)
 global._inst_player.player_level=global.player_level
@@ -76,7 +77,6 @@ if array_length(_enemy_list) != 0 {
 		}
 	}
 }
-
 
 // run the room start splash screen
 instance_create_layer(0,0,layer,obj_splasher)

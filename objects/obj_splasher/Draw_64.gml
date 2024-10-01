@@ -17,6 +17,7 @@ for (i=0; i< global.lifes; i++) {
 	draw_sprite_part(spr_life,-1,0,0,32,32,room_width-50-(global.lifes * 37)+(i*37) , 15)	
 }
 
+
 if SPLASH {
 	expired += 1.0/room_speed;
 	if ( expired > duration ) {
@@ -27,9 +28,11 @@ if SPLASH {
 	}
 	alpha = sin( expired/duration * 3.14159 );   // ramps up and down
 	y-=1; 
-	var msg=global.room_desc
-	var offset = (string_length(msg) * font_get_size(draw_get_font())/2)+font_get_size(draw_get_font())*3
-	draw_text_ext_transformed_color((room_width/2)-offset, room_height/2-50, msg,0,room_width,3,2,0, c_teal, c_teal, c_blue, c_blue, alpha)
+	var _msg=global.room_desc
+	var _x_scale=2
+	var _y_scale=2
+	var _offset = (string_width(_msg)*_x_scale)/2
+	draw_text_ext_transformed_color((room_width/2)-_offset, room_height/2-50, _msg,0,room_width,_x_scale,_y_scale,0, c_teal, c_teal, c_blue, c_blue, alpha)
 }
 
 if !SPLASH {
@@ -40,7 +43,9 @@ if !SPLASH {
 	}
 	alpha = sin( expired/duration * 3.14159 );   // ramps up and down
 	y-=1; 
-	var msg = "S  T  A  R  T"
-	var offset = (string_length(msg) * font_get_size(draw_get_font())/2)+font_get_size(draw_get_font())
-	draw_text_ext_transformed_color((room_width/2)-offset, room_height/2-50, msg,0,room_width,3,2,0, c_teal, c_teal, c_blue, c_blue, alpha)
+	var _msg = "S  T  A  R  T"
+	var _x_scale=2
+	var _y_scale=1
+	var _offset = (string_width(_msg)*_x_scale)/2
+	draw_text_ext_transformed_color((room_width/2)-_offset, room_height/2-50, _msg,0,room_width,_x_scale,_y_scale,0, c_teal, c_teal, c_blue, c_blue, alpha)
 }
