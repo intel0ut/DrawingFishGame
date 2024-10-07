@@ -19,7 +19,7 @@ for (i=0; i< global.lifes; i++) {
 
 
 if SPLASH {
-	expired += 1.0/room_speed;
+	expired += 1.0/game_get_speed(gamespeed_fps);
 	if ( expired > duration ) {
 		SPLASH=false
 		duration = 3;  // seconds
@@ -36,7 +36,7 @@ if SPLASH {
 }
 
 if !SPLASH {
-	expired += 1.0/room_speed;
+	expired += 1.0/game_get_speed(gamespeed_fps);
 	if ( expired > duration ) {
 		instance_activate_all()
 		instance_destroy(self,true)

@@ -1,6 +1,6 @@
 /// @description Insert description here
 
-expired += 1.0/room_speed;
+expired += 1.0/game_get_speed(gamespeed_fps);
 if ( expired > duration ) instance_destroy();
 alpha = sin( expired/duration * 3.14159 );   // ramps up and down
 

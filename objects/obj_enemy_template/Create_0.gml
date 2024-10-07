@@ -24,6 +24,7 @@ StartAnimation = function (_sequence, _sprite) {
 	_seq=layer_sequence_get_instance(activeSequence)
 	_seq.sequence.tracks[0].keyframes[0].channels[0].spriteIndex = _sprite
 	layer_sequence_xscale(activeSequence, image_xscale);
+	layer_sequence_yscale(activeSequence, image_yscale);
 	Disable()
 }
 

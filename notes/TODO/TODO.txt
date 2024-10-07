@@ -4,7 +4,15 @@ V add all enemy sprites and objects for them
 V organize enemies by their respective sea levels
 V add code to spawn level boss and move to next room
 V add manager object to show messages to user
-- Fix scale of enemies and player when starting level/boss entering room
+V fix player collision mask when leveling up
+V Fix scale of enemies and player when starting level/boss entering room
+V add blink effect when player gets hit
+V fixed the player not getting dmg from new enemies
+V fixed the message box not appearing on other levels
+V added game over/you died messages after player dies
+V add code to stop player/enemies during player died message
+V added pause screen
+- fix the spawn point of enemies
 - finish painting the sprites
 - maybe add animation to the sprites (swim, bite)
 - add a XP bar in place of the player HP bar
@@ -17,9 +25,9 @@ V add manager object to show messages to user
 - level up recovers HP
 - rework food spawn to limit how much food spawn in each level. 
 	- total should be enough to fight boss and amount spawn decrease with the player level
-- once player reach a condition for each level, spawn a "mini Boss"
-	- "A big fish is coming!"
-	- mini boss is one of the fish from next level with more HP and bigger size
+V once player reach a condition for each level, spawn a "mini Boss"
+	V "A big fish is coming!"
+	V mini boss is one of the fish from next level with more HP and bigger size
 	- level will be similar to player level
 	- player must hit the boss to inflict damage
 		- boss damage player too, maybe player need food to recover hp?

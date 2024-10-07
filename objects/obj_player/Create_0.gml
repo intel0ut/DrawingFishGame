@@ -9,3 +9,6 @@ healthbar_width=512
 healthbar_height=24
 healthbar_x=(room_width/2)-(healthbar_width/2)
 healthbar_y=16
+
+blink_duration=6
+blink_timer=blink_duration

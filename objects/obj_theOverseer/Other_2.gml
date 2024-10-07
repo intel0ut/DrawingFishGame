@@ -23,5 +23,6 @@ font_enable_effects(_bubble_font, true, {
 global.lifes=5
 global.player_level=1
 global.player_xp=0
-
-global.message_layer=layer_create(-250)
+global.chase_distance=350
+global.pause=false
+global.unpause=false

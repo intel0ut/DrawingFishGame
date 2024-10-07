@@ -40,7 +40,9 @@ global.MessageBox = function (_x, _y, _text="", _color1=c_aqua, _color2=c_aqua, 
 	if _text == "" or _text == pointer_null {
 		return
 	}
-
+	
+	global.message_layer=layer_create(-250)
+	
 	instance_create_layer(_x,_y,global.message_layer,obj_MessageBox, 
 	{
 		x_pos : _x,

@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (global.unpause) {
+	room_persistent=false
+	global.unpause=false
+	exit
+}
+	
 var _enemy_list = []
 var _enemy_max_spd = 2
 var _enemy_level
