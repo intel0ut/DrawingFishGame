@@ -48,6 +48,7 @@
   },
   "name":"DrawingFishGame",
   "resources":[
+    {"id":{"name":"fnt_debug_font","path":"fonts/fnt_debug_font/fnt_debug_font.yy",},},
     {"id":{"name":"TODO","path":"notes/TODO/TODO.yy",},},
     {"id":{"name":"obj_angler","path":"objects/obj_angler/obj_angler.yy",},},
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},},

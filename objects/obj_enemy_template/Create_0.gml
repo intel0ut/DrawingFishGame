@@ -1,5 +1,7 @@
 /// @description implements the dead animation for enemies
 enabled = true;
+max_hp=50
+enemy_hp=max_hp
 
 Enable = function () {
 	enabled = true;

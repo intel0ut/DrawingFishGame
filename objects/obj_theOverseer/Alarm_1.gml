@@ -1,7 +1,7 @@
 /// @description Periodically add food to the room so player won't starve
 // You can write your code in this editor
 
-var _max_food=global._inst_player.max_hp/3
+var _max_food=global.player_max_hp/3
 
 // add food to the scene
 // initial Y needs to be biger than 64 to give space to HP bar

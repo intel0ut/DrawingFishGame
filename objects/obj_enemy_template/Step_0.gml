@@ -6,4 +6,10 @@ CheckAnimation()
 
 if (!enabled) exit
 
-scr_enemy_step()
+if (enemy_hp <=0 ) {
+	global.player_hp+=food
+	global.player_xp+=xp
+	mask_index=spr_empty
+	StartAnimation(seq_enemy_dead, sprite_index);
+} else
+	scr_enemy_step()

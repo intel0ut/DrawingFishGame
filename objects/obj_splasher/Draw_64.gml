@@ -2,16 +2,26 @@
 // You can write your code in this editor
 
 // Draw the UI before freezing
-healthbar_width=512
-healthbar_height=24
-healthbar_x=(room_width/2)-(healthbar_width/2)
-healthbar_y=16
+var healthbar_width=512
+var healthbar_height=16
+var healthbar_x=(room_width/2)-(healthbar_width/2)
+var healthbar_y=16
+var xpbar_width=healthbar_width
+var xpbar_height=4
+var xpbar_x=healthbar_x
+var xpbar_y=38
 
-draw_sprite(spr_hp_bar_bg,0,healthbar_x,healthbar_y)
-draw_sprite_stretched(spr_hp,0,healthbar_x,healthbar_y,0, healthbar_height)
-draw_sprite(spr_hp_bar_border,0,healthbar_x,healthbar_y)
-draw_text_transformed_colour(20, healthbar_y-13, "Level",1, 0.8, 0, c_aqua, c_aqua, c_blue, c_blue, 1);
-draw_text_transformed_colour(150, healthbar_y-13, string(global._inst_player.player_level), 1, 0.8, 0, c_aqua, c_aqua, c_blue, c_blue, 1);
+// Draw HP bar
+draw_sprite_stretched(spr_hp_bar_bg,0,healthbar_x-2,healthbar_y-2, healthbar_width, healthbar_height+4)
+draw_sprite_stretched(spr_hp,0,healthbar_x,healthbar_y,1, healthbar_height)
+draw_sprite_stretched(spr_hp_bar_border,0,healthbar_x-2,healthbar_y-2, healthbar_width, healthbar_height+4)
+
+// Draw XP bar
+draw_sprite_stretched(spr_hp,3,xpbar_x,xpbar_y,(global.player_xp/global.next_level_xp) * xpbar_width, xpbar_height)
+
+
+draw_text_transformed_colour(20, healthbar_y-13, "Score",1, 0.8, 0, c_aqua, c_aqua, c_blue, c_blue, 1);
+draw_text_transformed_colour(150, healthbar_y-13, string(global.player_level), 1, 0.8, 0, c_aqua, c_aqua, c_blue, c_blue, 1);
 
 for (i=0; i< global.lifes; i++) {
 	draw_sprite_part(spr_life,-1,0,0,32,32,room_width-50-(global.lifes * 37)+(i*37) , 15)	

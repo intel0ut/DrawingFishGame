@@ -13,6 +13,20 @@ if collision_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,obj_wall,false,
 	y+=lengthdir_y(10,_dir)	
 }
 
+if global.player_hp <=0 {
+	can_take_hit=false
+	global.pause=true
+    global.lifes-=1
+    if global.lifes < 0 {
+        global.MessageBox(room_width/2, room_height/2, "Game Over!", c_red, c_red, c_maroon, c_maroon, 84, 3, 0, 0)
+		alarm[1]=game_get_speed(gamespeed_fps)*3
+	}
+    else {
+		global.MessageBox(room_width/2, room_height/2, "You Died!", c_red, c_red, c_maroon, c_maroon, 84, 2, 0, 0)
+        alarm[2]=game_get_speed(gamespeed_fps)*2
+	}
+}
+
 if (device_mouse_check_button(0, mb_left)) { // Android/mouse support
 	var x_in=device_mouse_x_to_gui(0)
 	var y_in=device_mouse_y_to_gui(0)
