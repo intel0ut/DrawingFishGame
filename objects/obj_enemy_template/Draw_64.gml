@@ -18,3 +18,10 @@ if  _player_inst {
 	   draw_sprite_stretched(spr_hp, 2,x-20,_y_off,_hp_draw,4)
 	   
 }
+
+if global.debug {
+	draw_set_font(fnt_debug_font)
+	draw_text(bbox_right+10,bbox_top, "Score: " + string(enemy_max_score))
+	draw_text(bbox_right+10,bbox_top+20, "HP: " + string(enemy_hp))
+	draw_set_font(global._bubble_font);
+}

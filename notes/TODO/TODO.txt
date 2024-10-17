@@ -13,24 +13,51 @@ V added game over/you died messages after player dies
 V add code to stop player/enemies during player died message
 V added pause screen
 - fix the spawn point of enemies
-- finish painting the sprites
-- maybe add animation to the sprites (swim, bite)
-- add a XP bar in place of the player HP bar
-- add hp bar to top of player
-- XP bar will keep track of player level
-	- XP will only increment
-	- each level has a next_level_xp that increases as the player level is higher
-- food recovers HP and give small amount of XP
-- other fish gives XP only
-- level up recovers HP
-- rework food spawn to limit how much food spawn in each level. 
-	- total should be enough to fight boss and amount spawn decrease with the player level
+V add a XP bar in place of the player HP bar
+V add hp bar to top of player
+V XP bar will keep track of player level
+	V XP will only increment
+	V each level has a next_level_xp that increases as the player level is higher
+V food recovers HP and give small amount of XP
+V other fish gives XP and HP
+X level up recovers HP
+X rework food spawn to limit how much food spawn in each level. 
+	X total should be enough to fight boss and amount spawn decrease with the player level
+V Player Battle
+	V If player level much lower enemy level, player takes big damage
+	V If player level below or equal to enemy, player damages enemy but also takes dmg
+	V if plyaer level > enemy level, player damages enemy proportional to level diff
 V once player reach a condition for each level, spawn a "mini Boss"
 	V "A big fish is coming!"
 	V mini boss is one of the fish from next level with more HP and bigger size
-	- level will be similar to player level
-	- player must hit the boss to inflict damage
-		- boss damage player too, maybe player need food to recover hp?
-	- Conditions:
-		- player reach a certain level
+	V level will be above player level and sized bigger
+	V player must hit the boss to inflict damage
+		V boss damage player too, maybe player need food to recover hp?
+	V Conditions:
+		X player reach a certain level
+		V Player kill all enemies on screen
 - add music and sfx
+- finish painting the sprites
+- maybe add animation to the sprites (swim, bite)
+- Score System
+	- Player get score after defeating enemies
+	- Food does not give score
+	- Each enemy instance has a max score that reduces every second
+	- Once player defeats enemy, remaining score is added to Score
+	- If counter == 0 player gets minimum score (maybe 100?)
+	- The faster they beat an enemy, the more score they get
+- add Final boss battle
+	- boss is invincible while arms are alive
+	- different attacks with Kraken arms
+	- Arms have different level lower than boss but are invincible before attack
+	- after boss attack, arms are vulnerable for a short time
+	- after arms are destroyed, player can attack boss
+	- Player takes big damage from arms during attack
+	- Player does dmg to arms during vulnerability, but also takes some dmg
+	- player damages boss after arms are gone, but also takes damage and need to recharge
+- Add start screen
+- Add tutorial/Help screen at start
+	- shows basic controls
+	- describe enemies
+	- teach how to dmg enemies
+	- explain XP/ Score, HP recovery

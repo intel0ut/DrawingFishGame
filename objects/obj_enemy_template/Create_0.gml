@@ -3,6 +3,8 @@ enabled = true;
 max_hp=50
 enemy_hp=max_hp
 
+alarm[2]=game_get_speed(gamespeed_fps)
+
 Enable = function () {
 	enabled = true;
 	image_alpha = 1;

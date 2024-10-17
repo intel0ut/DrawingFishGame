@@ -10,9 +10,9 @@ draw_sprite_stretched(spr_hp_bar_border,0,healthbar_x-2,healthbar_y-2, healthbar
 draw_sprite_stretched(spr_hp,3,xpbar_x,xpbar_y,min((global.player_xp/global.next_level_xp) * xpbar_width, xpbar_width-5), xpbar_height)
 
 
-// Score (shows level for now)
-draw_text_transformed_colour(20, healthbar_y-13, "Level",1, 0.8, 0, c_aqua, c_aqua, c_blue, c_blue, 1);
-draw_text_transformed_colour(150, healthbar_y-13, string(global.player_level), 1, 0.8, 0, c_aqua, c_aqua, c_blue, c_blue, 1);
+// Score 
+draw_text_transformed_colour(20, healthbar_y-13, "Score",1, 0.8, 0, c_aqua, c_aqua, c_blue, c_blue, 1);
+draw_text_transformed_colour(150, healthbar_y-13, string(global.score), 1, 0.8, 0, c_aqua, c_aqua, c_blue, c_blue, 1);
 
 
 // DEBUG

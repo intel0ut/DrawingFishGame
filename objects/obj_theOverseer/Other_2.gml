@@ -21,6 +21,7 @@ font_enable_effects(global._bubble_font, true, {
 })
 
 global.lifes=5
+global.score=0
 
 global.player_xp=0
 global.next_level_xp=100

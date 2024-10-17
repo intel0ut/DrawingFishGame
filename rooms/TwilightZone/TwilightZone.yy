@@ -13,7 +13,7 @@
         {"name":"g_RipplesPosition","type":0,"value":"32",},
         {"name":"g_RipplesPosition","type":0,"value":"32",},
         {"name":"g_RipplesSpeed","type":0,"value":"0.3",},
-        {"name":"g_RipplesWidth","type":0,"value":"32",},
+        {"name":"g_RipplesWidth","type":0,"value":"16",},
         {"name":"g_RipplesAmplitude","type":0,"value":"0.6",},
         {"name":"g_RipplesRadius","type":0,"value":"0",},
       ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_room3_background","path":"sprites/spr_room3_background/spr_room3_background.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
