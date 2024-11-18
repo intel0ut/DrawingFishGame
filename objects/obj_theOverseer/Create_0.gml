@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 random_set_seed(current_time)
+randomize()
 
 global.player_level=1
 

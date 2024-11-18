@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_angler",
-    "path":"sprites/spr_enemy_angler/spr_enemy_angler.yy",
+    "name":"spr_angler",
+    "path":"sprites/spr_angler/spr_angler.yy",
   },
   "spriteMaskId":null,
   "visible":true,

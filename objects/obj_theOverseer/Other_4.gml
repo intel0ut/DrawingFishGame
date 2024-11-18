@@ -1,12 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (global.unpause) {
-	room_persistent=false
-	global.unpause=false
+if (global.restart) {
+	global.restart=false
 	exit
 }
-	
+
+if (global.pause) exit;
+
+
 var _enemy_list = []
 var _enemy_max_spd = 2
 var _enemy_level=1
@@ -26,10 +28,14 @@ global._inst_player.y=room_height/2
 
 var _max_food=global.player_max_hp/3
 
+var _music = pointer_null
+global.level_music=pointer_null
+
 // Room initialization
 switch (room) {
 	case SunlitZone: {
-		_enemy_list = [[obj_puffer, 2], [obj_grouper, 1]]
+		//_enemy_list = [[obj_puffer_var1, 2], [obj_puffer_var2, 1], [obj_grouper_var1, 2], [obj_bluering_octupus, 1]]
+		_enemy_list = [[obj_boss,1],[obj_grouper_var1, 1]]
 		_enemy_max_spd = 2
 		_enemy_level = 3
 		_enemy_scale=0.6
@@ -37,26 +43,28 @@ switch (room) {
 		global._enemy_dmg=10
 		global._enemy_xp=10
 		// enemy boss: name, min_level, spd, scale_multiplier]
-		global._enemy_boss = [obj_shark, _enemy_level+1, _enemy_max_spd+1, 2]
+		global._enemy_boss = [obj_lemon_shark, _enemy_level+2, _enemy_max_spd+1, 2]
 		global.room_desc="The Sunlit Zone"
+		_music=snd_level_music_slow_1
 		break
 	}
 	case CoralReef: {
-		_enemy_list = [[obj_puffer, 2], [obj_grouper, 2],[obj_shark, 1]]
+		_enemy_list = [[obj_puffer_var2, 2], [obj_grouper_var1, 2], [obj_grouper_var2, 2],[obj_morey_eel, 1], [obj_lemon_shark, 1]]
 		_enemy_max_spd = 3
-		_enemy_level = 7
+		_enemy_level = 8
 		_enemy_scale=0.7
 		_hp=60
 		global._enemy_dmg=15
 		global._enemy_xp=15
 		// enemy boss: name, min_level, spd, scale_multiplier]
-		global._enemy_boss = [obj_swordfish, _enemy_level+1, _enemy_max_spd+1, 2.5]
+		global._enemy_boss = [obj_shark, _enemy_level+2, _enemy_max_spd+1, 2.5]
 		global.room_desc="The Coral Reef Zone"
+		_music=snd_level_music_slow_1
 		break
 	}
 
 	case TwilightZone: {
-		_enemy_list = [[obj_grouper, 2],[obj_shark, 2], [obj_swordfish, 1]]
+		_enemy_list = [[obj_grouper_var2, 2],[obj_lemon_shark, 2], [obj_shark, 2], [obj_swordfish, 1]]
 		_enemy_max_spd = 4
 		_enemy_level = 10
 		_enemy_scale=0.8
@@ -64,38 +72,49 @@ switch (room) {
 		global._enemy_dmg=17
 		global._enemy_xp=20
 		// enemy boss: name, min_level, spd, scale_multiplier]
-		global._enemy_boss = [obj_angler, _enemy_level+1, _enemy_max_spd+1, 2.5]
+		global._enemy_boss = [obj_angler, _enemy_level+2, _enemy_max_spd+1, 2.5]
 		global.room_desc="The Twilight Zone"
+		_music=snd_level_music_slow_2
 		break
 	}
 
 	case MidnightZone: {
-		_enemy_list = [[obj_shark, 2], [obj_swordfish, 1], [obj_angler, 1], [obj_gulper, 1]]
-		_enemy_max_spd = 5
+		_enemy_list = [[obj_shark, 2], [obj_swordfish, 1], [obj_angler, 2], [obj_gulper, 1]]
+		_enemy_max_spd = 4
 		_enemy_level = 14
 		_enemy_scale=0.9
 		_hp=80
 		global._enemy_dmg=20
 		global._enemy_xp=25
 		// enemy boss: name, min_level, spd, scale_multiplier]
-		global._enemy_boss = [obj_dragonfish, _enemy_level+1, _enemy_max_spd+1, 2.5]
+		global._enemy_boss = [obj_dragonfish, _enemy_level+2, _enemy_max_spd+1, 2.5]
 		global.room_desc="The Midnight Zone"
+		_music=snd_level_music_slow_2
 		break
 	}
 
 	case MarianaTrench: {
 		_enemy_list = [[obj_angler, 2], [obj_gulper, 2], [obj_dragonfish, 2]]
-		_enemy_max_spd = 5
+		_enemy_max_spd = 4
 		_enemy_level = 18
+		_enemy_scale=1
 		_hp=100
 		global._enemy_dmg=25
 		global._enemy_xp=30
 		// enemy boss: name, min_level, spd, scale_multiplier]
 		global._enemy_boss = [obj_boss, _enemy_level+1, _enemy_max_spd+1, 2.5]
 		global.room_desc="The Mariana Trench"
+		_music=snd_level_music_upbeating
 		break
 	}
 }
+
+// start playing music
+if not audio_is_playing(_music) {
+	audio_stop_all()
+}
+ 
+global.level_music=audio_play_sound(_music, 50, true)
 
 // add wall to the scene x-axis
 for (var _i=0; _i<=room_width-32; _i+=32) {

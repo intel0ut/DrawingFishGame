@@ -30,8 +30,7 @@ global.player_hp=global.player_max_hp
 
 global.chase_distance=350
 global.pause=false
-global.unpause=false
-
+global.restart=false
 
 // debug stuff
 

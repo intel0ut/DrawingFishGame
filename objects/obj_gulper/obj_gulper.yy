@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_gulper",
-    "path":"sprites/spr_enemy_gulper/spr_enemy_gulper.yy",
+    "name":"spr_gulper_eel",
+    "path":"sprites/spr_gulper_eel/spr_gulper_eel.yy",
   },
   "spriteMaskId":null,
   "visible":true,

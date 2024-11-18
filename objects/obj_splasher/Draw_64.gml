@@ -1,6 +1,8 @@
 /// @description drawing elements that are not in the application surface at the time of pause
 // You can write your code in this editor
 
+if global.pause exit
+
 // Draw the UI before freezing
 var healthbar_width=512
 var healthbar_height=16

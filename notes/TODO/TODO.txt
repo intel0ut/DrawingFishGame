@@ -40,12 +40,12 @@ V once player reach a condition for each level, spawn a "mini Boss"
 - finish painting the sprites
 - maybe add animation to the sprites (swim, bite)
 - Score System
-	- Player get score after defeating enemies
-	- Food does not give score
-	- Each enemy instance has a max score that reduces every second
-	- Once player defeats enemy, remaining score is added to Score
-	- If counter == 0 player gets minimum score (maybe 100?)
-	- The faster they beat an enemy, the more score they get
+	V Player get score after defeating enemies
+	V Food does not give score
+	V Each enemy instance has a max score that reduces every second
+	V Once player defeats enemy, remaining score is added to Score
+	V If counter == 0 player gets minimum score (maybe 100?)
+	V The faster they beat an enemy, the more score they get
 - add Final boss battle
 	- boss is invincible while arms are alive
 	- different attacks with Kraken arms

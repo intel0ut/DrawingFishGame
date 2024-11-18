@@ -1,7 +1,7 @@
 /// @description initialize available food and player stats
 // You can write your code in this editor
 
-player_size=5/global.player_level
+player_size=4/global.player_level
 image_xscale=1/player_size
 image_yscale=1/player_size
 

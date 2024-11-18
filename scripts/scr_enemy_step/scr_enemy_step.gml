@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 function scr_enemy_step(){
+	if (global.pause) exit;
 
 	if !hit { // seek player 
 		var _distance_to_player=point_distance(x,y,global._inst_player.x,global._inst_player.y)

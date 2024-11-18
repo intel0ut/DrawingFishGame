@@ -21,5 +21,6 @@ if global.debug {
 	draw_text(20, room_height-60,"Player HP: " + string(global.player_hp))
 	draw_text(20, room_height-40,"Player XP: " + string(global.player_xp))
 	draw_text(20, room_height-20, "Player Level: " + string(global.player_level))
+	draw_text(20, room_height-80, "Player size: " + string(abs(sprite_width)))
 	draw_set_font(global._bubble_font);
 }

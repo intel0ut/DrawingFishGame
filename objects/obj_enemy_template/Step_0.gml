@@ -1,6 +1,6 @@
 /// @description move enemy towards player and process hits
 
-if(global.pause) exit;
+if (global.pause) exit;
 
 CheckAnimation()
 

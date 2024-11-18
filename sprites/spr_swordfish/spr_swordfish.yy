@@ -3,23 +3,23 @@
   "%Name":"spr_swordfish",
   "bboxMode":0,
   "bbox_bottom":37,
-  "bbox_left":0,
+  "bbox_left":1,
   "bbox_right":127,
-  "bbox_top":0,
+  "bbox_top":1,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b9efcbc1-4eee-4329-adeb-00fa1f1026e7","name":"b9efcbc1-4eee-4329-adeb-00fa1f1026e7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"0396d3cd-82e2-46cc-b46a-73bd6b0f8a82","name":"0396d3cd-82e2-46cc-b46a-73bd6b0f8a82","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":38,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"4c592f16-e77b-4ed2-baf7-dfae8c8065e8","blendMode":0,"displayName":"default","isLocked":false,"name":"4c592f16-e77b-4ed2-baf7-dfae8c8065e8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"6debab0e-9dc0-4dce-8c07-62e42e22f689","blendMode":0,"displayName":"default","isLocked":false,"name":"6debab0e-9dc0-4dce-8c07-62e42e22f689","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_swordfish",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b9efcbc1-4eee-4329-adeb-00fa1f1026e7","path":"sprites/spr_swordfish/spr_swordfish.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c27809bc-ada6-40a6-ab7c-1a9c2893aac1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0396d3cd-82e2-46cc-b46a-73bd6b0f8a82","path":"sprites/spr_swordfish/spr_swordfish.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2b45a6d3-0272-4d53-b527-0aecef35d027","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_dragonfish",
-    "path":"sprites/spr_enemy_dragonfish/spr_enemy_dragonfish.yy",
+    "name":"spr_dragonfish",
+    "path":"sprites/spr_dragonfish/spr_dragonfish.yy",
   },
   "spriteMaskId":null,
   "visible":true,

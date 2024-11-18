@@ -1,6 +1,6 @@
 /// @description move and collide player, flip sprite depending on direction
 
-if(global.pause) exit;
+if (global.pause) exit;
 
 var _xinput = 0
 var _yinput = 0
@@ -17,6 +17,11 @@ if global.player_hp <=0 {
 	can_take_hit=false
 	global.pause=true
     global.lifes-=1
+	if not audio_is_playing(snd_game_over) {
+		audio_stop_all()
+		global.level_music=audio_play_sound(snd_game_over, 50, true)
+	}
+	
     if global.lifes < 0 {
         global.MessageBox(room_width/2, room_height/2, "Game Over!", c_red, c_red, c_maroon, c_maroon, 84, 3, 0, 0)
 		alarm[1]=game_get_speed(gamespeed_fps)*3
@@ -46,6 +51,15 @@ if (device_mouse_check_button(0, mb_left)) { // Android/mouse support
 } else {  // Windows keyboard support
 	_xinput = keyboard_check(vk_right) - keyboard_check(vk_left);
 	_yinput = keyboard_check(vk_down) - keyboard_check(vk_up);
+}
+
+// level up and set player size
+if (global.player_xp >= global.next_level_xp) {
+	global.player_level+=1
+	player_size=12/global.player_level
+	global.player_xp=global.player_xp-global.next_level_xp
+	global.next_level_xp=global.next_level_xp*1.04
+	global.MessageBox(x, bbox_top-20, "Level Up!", c_aqua, c_aqua, c_teal, c_teal, 36, 1.5, 0, -1)
 }
 
 // scale player sprite in Y
