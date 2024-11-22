@@ -83,6 +83,7 @@
     {"id":{"name":"Object26","path":"objects/Object26/Object26.yy",},},
     {"id":{"name":"pth_boss","path":"paths/pth_boss/pth_boss.yy",},},
     {"id":{"name":"CoralReef","path":"rooms/CoralReef/CoralReef.yy",},},
+    {"id":{"name":"GameWinRoom","path":"rooms/GameWinRoom/GameWinRoom.yy",},},
     {"id":{"name":"MarianaTrench","path":"rooms/MarianaTrench/MarianaTrench.yy",},},
     {"id":{"name":"MidnightZone","path":"rooms/MidnightZone/MidnightZone.yy",},},
     {"id":{"name":"pauseroom","path":"rooms/pauseroom/pauseroom.yy",},},
@@ -153,6 +154,7 @@
     {"roomId":{"name":"MarianaTrench","path":"rooms/MarianaTrench/MarianaTrench.yy",},},
     {"roomId":{"name":"pauseroom","path":"rooms/pauseroom/pauseroom.yy",},},
     {"roomId":{"name":"test_room","path":"rooms/test_room/test_room.yy",},},
+    {"roomId":{"name":"GameWinRoom","path":"rooms/GameWinRoom/GameWinRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

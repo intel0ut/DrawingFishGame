@@ -36,22 +36,22 @@ V once player reach a condition for each level, spawn a "mini Boss"
 	V Conditions:
 		X player reach a certain level
 		V Player kill all enemies on screen
-- add music and sfx
+V add music and sfx
 - finish painting the sprites
 - maybe add animation to the sprites (swim, bite)
-- Score System
+V Score System
 	V Player get score after defeating enemies
 	V Food does not give score
 	V Each enemy instance has a max score that reduces every second
 	V Once player defeats enemy, remaining score is added to Score
 	V If counter == 0 player gets minimum score (maybe 100?)
 	V The faster they beat an enemy, the more score they get
-- add Final boss battle
-	- boss is invincible while arms are alive
-	- different attacks with Kraken arms
-	- Arms have different level lower than boss but are invincible before attack
-	- after boss attack, arms are vulnerable for a short time
-	- after arms are destroyed, player can attack boss
+V add Final boss battle
+	V boss is invincible while arms are alive
+	V different attacks with Kraken arms
+	V Arms have different level lower than boss but are invincible before attack
+	V after boss attack, arms are vulnerable for a short time
+	V after arms are destroyed, player can attack boss
 	- Player takes big damage from arms during attack
 	- Player does dmg to arms during vulnerability, but also takes some dmg
 	- player damages boss after arms are gone, but also takes damage and need to recharge

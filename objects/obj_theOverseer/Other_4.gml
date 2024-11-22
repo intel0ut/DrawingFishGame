@@ -34,8 +34,8 @@ global.level_music=pointer_null
 // Room initialization
 switch (room) {
 	case SunlitZone: {
-		//_enemy_list = [[obj_puffer_var1, 2], [obj_puffer_var2, 1], [obj_grouper_var1, 2], [obj_bluering_octupus, 1]]
-		_enemy_list = [[obj_boss,1],[obj_grouper_var1, 1]]
+		_enemy_list = [[obj_puffer_var1, 2], [obj_puffer_var2, 1], [obj_grouper_var1, 2], [obj_bluering_octupus, 1]]
+		//_enemy_list = [[obj_boss,1],[obj_grouper_var1, 1]]
 		_enemy_max_spd = 2
 		_enemy_level = 3
 		_enemy_scale=0.6
@@ -66,7 +66,7 @@ switch (room) {
 	case TwilightZone: {
 		_enemy_list = [[obj_grouper_var2, 2],[obj_lemon_shark, 2], [obj_shark, 2], [obj_swordfish, 1]]
 		_enemy_max_spd = 4
-		_enemy_level = 10
+		_enemy_level = 12
 		_enemy_scale=0.8
 		_hp=70
 		global._enemy_dmg=17
@@ -81,7 +81,7 @@ switch (room) {
 	case MidnightZone: {
 		_enemy_list = [[obj_shark, 2], [obj_swordfish, 1], [obj_angler, 2], [obj_gulper, 1]]
 		_enemy_max_spd = 4
-		_enemy_level = 14
+		_enemy_level = 15
 		_enemy_scale=0.9
 		_hp=80
 		global._enemy_dmg=20
@@ -102,7 +102,7 @@ switch (room) {
 		global._enemy_dmg=25
 		global._enemy_xp=30
 		// enemy boss: name, min_level, spd, scale_multiplier]
-		global._enemy_boss = [obj_boss, _enemy_level+1, _enemy_max_spd+1, 2.5]
+		global._enemy_boss = [obj_boss, _enemy_level+3, _enemy_max_spd, 2.5]
 		global.room_desc="The Mariana Trench"
 		_music=snd_level_music_upbeating
 		break

@@ -3,7 +3,9 @@
 
 if state=="IDLE" {
 	state="ATK"
-	can_take_hit=false
+	if not arm1.dead or not arm2.dead {
+		can_take_hit=false
+	}
 
 	var _chance=irandom(100)
 	if _chance <= 40 { //attack1

@@ -11,6 +11,15 @@ if (global.pause) {
 // attack when player is close
 var _distance_to_player=point_distance(x,y,global._inst_player.x,global._inst_player.y)
 
+// check if dead
+if hp_boss <= 0 {
+	// play dead animation 
+	// blink screen
+	// delay
+	room_goto(GameWinRoom)
+}
+
+
 if collided {
 	move_towards_point(global._inst_player.x,global._inst_player.y,-(speed * 10))
 	show_debug_message("Bouncing...")
