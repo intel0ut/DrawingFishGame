@@ -33,6 +33,8 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"level","filters":[],"listItems":[],"multiselect":false,"name":"level","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"obj_boss.level","varType":4,},
     {"$GMObjectProperty":"v1","%Name":"food","filters":[],"listItems":[],"multiselect":false,"name":"food","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"25","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"enemy_max_score","filters":[],"listItems":[],"multiselect":false,"name":"enemy_max_score","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5000","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"xp","filters":[],"listItems":[],"multiselect":false,"name":"xp","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
