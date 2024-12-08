@@ -40,8 +40,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_arm1_idle",
-    "path":"sprites/spr_arm1_idle/spr_arm1_idle.yy",
+    "name":"idle_arm1",
+    "path":"sprites/idle_arm1/idle_arm1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

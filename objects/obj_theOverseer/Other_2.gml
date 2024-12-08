@@ -34,4 +34,4 @@ global.restart=false
 
 // debug stuff
 
-global.debug=true
+global.debug=false

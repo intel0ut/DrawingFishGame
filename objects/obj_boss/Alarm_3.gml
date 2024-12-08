@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description collided and stopped
 // 
 collided=false
 speed=0

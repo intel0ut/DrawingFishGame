@@ -46,8 +46,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_body_idle",
-    "path":"sprites/spr_body_idle/spr_body_idle.yy",
+    "name":"idle_body",
+    "path":"sprites/idle_body/idle_body.yy",
   },
   "spriteMaskId":null,
   "visible":true,
