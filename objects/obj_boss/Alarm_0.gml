@@ -10,18 +10,7 @@ if state=="IDLE" {
 	can_take_hit=false
 	// choose type of attack
 	var _chance=irandom(100)
-	if _chance <=100 {
-		state="SPECIAL"
-		arm1.state="SPECIAL"
-		arm2.state="SPECIAL"
-		arm1.image_alpha=0
-		arm2.image_alpha=0	
-		sprite_index=kraken_whirlpool
-		image_index=0
-		global.attack_x = global._inst_player.x
-		global.attack_y = global._inst_player.y
-	}
-	else if _chance <= 40 { //attack1
+	if _chance <= 40 { //attack1
 		if not arm1.dead {
 			state="ATK"
 			arm1.state="ATK"

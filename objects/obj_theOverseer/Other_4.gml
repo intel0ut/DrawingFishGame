@@ -35,7 +35,7 @@ global.level_music=pointer_null
 switch (room) {
 	case SunlitZone: {
 		_enemy_list = [[obj_puffer_var1, 2], [obj_puffer_var2, 1], [obj_grouper_var1, 2], [obj_bluering_octupus, 1]]
-		//_enemy_list = [[obj_boss,1],[obj_grouper_var1, 1]]
+		//_enemy_list = [[obj_boss,1],[obj_grouper_var1, 1.5]]
 		_enemy_max_spd = 2
 		_enemy_level = 3
 		_enemy_scale=0.6
@@ -102,7 +102,7 @@ switch (room) {
 		global._enemy_dmg=25
 		global._enemy_xp=30
 		// enemy boss: name, min_level, spd, scale_multiplier]
-		global._enemy_boss = [obj_boss, _enemy_level+3, _enemy_max_spd, 2.5]
+		global._enemy_boss = [obj_boss, _enemy_level+3, _enemy_max_spd, 1]
 		global.room_desc="The Mariana Trench"
 		_music=snd_level_music_upbeating
 		break
@@ -162,4 +162,4 @@ for(i=0; i<=_max_food; i++) {
 alarm[1]=600
 
 // run the room start splash screen
-instance_create_layer(0,0,layer,obj_splasher)
+instance_create_layer(100,100,layer,obj_splasher)

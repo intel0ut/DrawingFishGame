@@ -4,7 +4,9 @@ expired += 1.0/game_get_speed(gamespeed_fps);
 if ( expired > duration ) instance_destroy();
 alpha = sin( expired/duration * 3.14159 );   // ramps up and down
 
+
 // figure out the necessary scale to get to the font size
+
 var _scale=font_size/font_get_size(draw_get_font())
 
 // calculate the offset to center the message at the x,y coord

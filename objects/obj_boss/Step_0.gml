@@ -11,6 +11,10 @@ if (global.pause) {
 // attack when player is close
 var _distance_to_player=point_distance(x,y,global._inst_player.x,global._inst_player.y)
 
+if (arm1.dead and arm2.dead) {
+	can_take_hit=true
+}
+
 // check if dead
 if hp_boss <= 0 {
 	// play dead animation 
@@ -37,7 +41,7 @@ if state="SPECIAL" and image_index>= 30 and not collided {
 		path_end()
 	}
 	show_debug_message("moving towards {0} {1}", global.attack_x , global.attack_y)
-	move_towards_point(global.attack_x, global.attack_y, 10)
+	move_towards_point(global._inst_player.x, global._inst_player.y,5)
 	return
 }
 
@@ -68,7 +72,6 @@ if state == "ATK" {
 } 
 
 if _distance_to_player <= global.chase_distance and not collided{
-	show_debug_message("{0} {1} {2} ", path_x, path_y, path_pos)
 	if path_x < 0 and path_y < 0 {
 		path_x=path_get_x(path_index,path_position)
 		path_y=path_get_y(path_index,path_position)
@@ -78,7 +81,6 @@ if _distance_to_player <= global.chase_distance and not collided{
 	move_towards_point(global._inst_player.x,global._inst_player.y,2)
 } else {
 	if path_x >= 0 and path_y >= 0 {
-		show_debug_message("{0} {1} {2} ", path_x, path_y, path_pos)
 		if point_distance(x,y,path_x,path_y) < 2 {
 			path_start(pth_boss, 1,path_action_continue,true)
 			path_position=path_pos

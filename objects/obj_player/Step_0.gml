@@ -56,14 +56,14 @@ if (device_mouse_check_button(0, mb_left)) { // Android/mouse support
 // level up and set player size
 if (global.player_xp >= global.next_level_xp) {
 	global.player_level+=1
-	player_size=12/global.player_level
+	global.player_scale*=1.05
 	global.player_xp=global.player_xp-global.next_level_xp
 	global.next_level_xp=global.next_level_xp*1.04
 	global.MessageBox(x, bbox_top-20, "Level Up!", c_aqua, c_aqua, c_teal, c_teal, 36, 1.5, 0, -1)
 }
 
 // scale player sprite in Y
-image_yscale=1/player_size
+image_yscale=global.player_scale
 
 // scale and flip player sprite in X
 if _xinput <> 0 {
@@ -71,7 +71,7 @@ if _xinput <> 0 {
 	_last=-_xinput // keep player direction
 }
 	
-image_xscale=_last/player_size
+image_xscale=_last * global.player_scale
 
 // blink while invincible
 if !can_take_hit {

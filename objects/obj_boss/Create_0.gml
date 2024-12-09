@@ -16,10 +16,13 @@ hp_boss=400
 
 arm1=instance_create_layer(x-8, y-38, layer, obj_boss_arm1)
 arm2=instance_create_layer(x-5, y-23, layer, obj_boss_arm2)
-arm1.image_xscale=0.6
-arm1.image_yscale=0.6
-arm2.image_xscale=0.6
-arm2.image_yscale=0.6
+
+var arm_xscale=image_xscale //* 0.6
+var arm_yscale=image_yscale //* 0.6
+arm1.image_xscale=arm_xscale
+arm1.image_yscale= arm_yscale
+arm2.image_xscale=arm_xscale
+arm2.image_yscale= arm_yscale
 
 can_take_hit=false
 dmg_timer=5

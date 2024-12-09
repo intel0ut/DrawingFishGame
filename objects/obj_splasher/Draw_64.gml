@@ -21,9 +21,8 @@ draw_sprite_stretched(spr_hp_bar_border,0,healthbar_x-2,healthbar_y-2, healthbar
 // Draw XP bar
 draw_sprite_stretched(spr_hp,3,xpbar_x,xpbar_y,(global.player_xp/global.next_level_xp) * xpbar_width, xpbar_height)
 
-
-draw_text_transformed_colour(20, healthbar_y-13, "Score",1, 0.8, 0, c_aqua, c_aqua, c_blue, c_blue, 1);
-draw_text_transformed_colour(150, healthbar_y-13, string(global.score), 1, 0.8, 0, c_aqua, c_aqua, c_blue, c_blue, 1);
+draw_text_transformed_colour(50, healthbar_y-13, "Score",1, 0.8, 0, c_aqua, c_aqua, c_blue, c_blue, 1);
+draw_text_transformed_colour(200, healthbar_y-13, string(global.score), 1, 0.8, 0, c_aqua, c_aqua, c_blue, c_blue, 1);
 
 for (var i=0; i< global.lifes; i++) {
 	draw_sprite_part(spr_life,-1,0,0,32,32,room_width-50-(global.lifes * 37)+(i*37) , 15)	

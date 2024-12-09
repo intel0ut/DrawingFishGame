@@ -15,7 +15,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Templates",
-    "path":"folders/Objects/Templates.yy",
+    "path":"folders/Objects/Enemies/Templates.yy",
   },
   "parentObjectId":null,
   "persistent":false,

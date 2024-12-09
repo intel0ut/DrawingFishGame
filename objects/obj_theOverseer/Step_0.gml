@@ -30,7 +30,7 @@ if !global.room_finished and global.boss_spawned and !instance_find(global._enem
 		global.room_finished=true
 		global.MessageBox(room_width/2, room_height/2, "You won! Diving deeper...", c_aqua, c_aqua, c_teal, c_teal, 64, 2.0, 0, -0.2)
 		alarm[2] = 180
-		audio_stop_all()
+		//audio_stop_all()
 		global.level_music=audio_play_sound(snd_boss_win_2, 50, false)
 	}
 }
