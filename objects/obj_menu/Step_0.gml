@@ -29,7 +29,8 @@ if (_x_in >= menu_x-button_w and _x_in <= menu_x+button_w) and
 	}
 }
 
-if keyboard_check_pressed(vk_enter) or device_mouse_check_button_released(0, mb_left) {
+if keyboard_check_pressed(vk_enter) or (device_mouse_check_button_released(0, mb_left) and (_x_in >= menu_x-button_w and _x_in <= menu_x+button_w) and
+   (_y_in >= menu_y)) {
 	switch(menu_index) {
 		case 0:
 			show_debug_message("Play")

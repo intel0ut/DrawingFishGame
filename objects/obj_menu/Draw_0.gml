@@ -1,6 +1,10 @@
 /// @description Insert description here
 // 
 
+if instance_find(obj_intro_video,0) {
+	return	
+}
+
 var _i = 0 
 
 repeat (buttons) {

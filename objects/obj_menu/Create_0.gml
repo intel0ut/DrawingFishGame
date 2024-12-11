@@ -16,6 +16,7 @@ buttons=array_length(button)
 menu_index=0
 last_selected=0
 
+
 // start playing music
 if not audio_is_playing(snd_menu_music) {
 	audio_stop_all()
